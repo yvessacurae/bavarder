@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/yvessacurae/bavarder#readme",
   "dependencies": {
-    "express": "^4.10.2"
+    "express": "^4.10.2",
+    "socket.io": "^1.7.1"
   }
 }

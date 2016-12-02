@@ -1,0 +1,27 @@
+{
+  "name": "bavarder",
+  "version": "0.0.1",
+  "description": "Simple chat for study",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvessacurae/bavarder.git"
+  },
+  "keywords": [
+    "chat",
+    "socket",
+    "node"
+  ],
+  "author": "Yves Sacurae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yvessacurae/bavarder/issues"
+  },
+  "homepage": "https://github.com/yvessacurae/bavarder#readme",
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}

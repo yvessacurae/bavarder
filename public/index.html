@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bavarder</title>
+		<link rel="stylesheet" type="text/css" href="css/bavarder.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<ul id="messages"></ul>
+			<div id="chats">Chats abertos:</div>
+			<div id="nickname">
+				<form id="change-nickname" action="">
+					<input id="user" autocomplete="off" /><button>Trocar</button>
+				</form>
+			</div>
+			<form id="send-msgs" action="">
+				<input id="m" autocomplete="off" /><button>Send</button>
+			</form>
+		</div>
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="js/bavarder.js"></script>
+</html>

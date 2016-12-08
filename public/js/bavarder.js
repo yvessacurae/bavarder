@@ -1,21 +1,17 @@
-var socket = io();
+$(function() {
 
-var username;
+    $('.fields').click(function() {
+        $(this).find("input").css({height: "30px", background: "#F0F7EE"});
+        $(this).find("input").focus();
+    });
 
-$('#send-msgs').submit(function(){
-    socket.emit('chat message', {username: username, msg: $('#m').val()});
-    $('#m').val('');
-    return false;
-});
+    $('.fields input').focusin(function() {
+        $(this).css({height: "30px", background: "#F0F7EE"});
+    });
 
-$('#change-nickname').submit(function(){
-    username = $('#user').val();
-    socket.emit('add user', username);
-
-    $('#user').val('');
-    return false;
-});
-
-socket.on('chat message', function(data){
-    $('#messages').append($('<li>').text(data.username+': '+data.msg));
+    $('.fields input').focusout(function() {
+        if($(this).val()==="") {
+            $(this).css({height: "1px", background: "#333"});
+        }
+    });
 });

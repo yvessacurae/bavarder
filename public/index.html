@@ -5,7 +5,24 @@
 		<link rel="stylesheet" type="text/css" href="css/bavarder.css">
 	</head>
 	<body>
-		<div class="wrapper">
+		<div id="login-content" class="login">
+			<h1>Bavarder</h1>
+			<form id="login" action="">
+				<div class="fields">
+					<label for="login">login:</label>
+					<input autocomplete="off" />
+				</div>
+				<div class="fields">
+					<label for="login">password:</label>
+					<input type="password" autocomplete="off" />
+					<a href="#">forgot password</a>
+				</div>
+				<div class="fields">
+					<button>login</button>
+				</div>
+			</form>
+		</div>
+		<div id="chat-content" class="wrapper">
 			<ul id="messages"></ul>
 			<div id="chats">Chats abertos:</div>
 			<div id="nickname">
@@ -20,5 +37,8 @@
 	</body>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="js/client.js"></script>
 	<script src="js/bavarder.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 </html>
